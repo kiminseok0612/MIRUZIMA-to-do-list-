@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divece-width, initial-scale=1.0"/>
+    <title>MIRUZIMA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="edit-box" role="aria-hidden">
+      <form action="javascript:void(0);" method="POST" id="save-edit">
+        <input type="text" id="edit-todo">
+        <input type="submit" value="저장" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+      </form>
+    </div>
+    <div class="title">
+        <h3>MIRUZIAM</h3>
+        <p>미루지 말고 기억하자!</p>
+    </div>
+    <div class="form">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+        <input type="text" id="add-todo" placeholder="할 일을 추가하세요">
+        <input type="submit" value="추가" class="btn btn-primary">
+        </form>
+        <p>미루고 있는 일</p>
+        <h5 id="counter"></h5>
+        <table>
+            <tbody id="tasks">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

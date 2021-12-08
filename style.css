@@ -1,0 +1,51 @@
+*{
+  padding:0px;
+  margin:0 auto;
+  text-align: center; 
+}
+.form{
+    margin: auto;
+    max-width:300px;
+    text-align: center
+}
+input[type='submit'], button, [aria-label]{
+  cursor: pointer;
+}
+#edit-box{
+  display: none;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+td{
+    padding-right: 10px;
+    text-align: left;
+}
+tr{
+  height:100px;
+}
+td:nth-child(1){
+  width:150px;
+}
+tr:nth-child(3n){
+  background-color:rgb(161,215,215);
+}
+tr:nth-child(3n-1){
+  background-color:rgb(191,225,192);
+}
+tr:nth-child(3n-2){
+  background-color:rgb(237,238,233);
+}
+.to-do{
+    background: transparent !important;
+}
+#edit-box{
+  width:100%;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  height:80px;
+  padding:5px;
+  background-color:#000;
+  opacity:0.9;
+}
